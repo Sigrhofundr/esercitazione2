@@ -33,18 +33,24 @@ std::shared_ptr<Base> Directory::get(std::string name) {
 
 }
 
+//funziona come il metodo get(nome), facendo un dynamic_pointer_cast dal tipo Base al tipo Directory
 std::shared_ptr<Directory> Directory::getDir(std::string name) {
     return std::shared_ptr<Directory>();
 }
 
+//funziona come il metodo get(nome), facendo un dynamic_pointer_cast dal tipo Base al tipo File
 std::shared_ptr<File> Directory::getFile(std::string name) {
     return std::shared_ptr<File>();
 }
 
+/*rimuove dalla collezione di figli della directory corrente l’oggetto (Directory o File) di nome “nome”.
+ * La rimozione degli oggetti di nome “ .. ” e “ . ” non è permessa e causa un’eccezione*/
 void Directory::remove(std::string nome) {
 
 }
 
+/* implementa il metodo virtuale puro della classe Base; elenca ricorsivamente File e
+ * Directory figli della directory corrente, indentati in modo appropriato*/
 void Directory::Is(int indent) const {
 
 }

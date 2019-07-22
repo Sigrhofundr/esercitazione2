@@ -4,9 +4,11 @@
 
 #include "File.h"
 
-uintmax_t File::getSize() const {
+uintmax_t File::getSize() const { //restituisce la dimensione del file
     return 0;
 }
+
+//implementa il metodo virtuale puro della classe Base; stampa nome e dimensione del file con indentazione appropriata
 void File::Is(int indent = 0) const override{
 
 }
